@@ -1,0 +1,451 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Marker+Hatch&display=swap");
+* {
+  background-color: #0e1016;
+  text-decoration: none;
+  color: #6f6f6f;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+body,
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+}
+h2 {
+  font-size: 30px;
+}
+h5 {
+  font-size: 50px;
+}
+.navbar {
+  margin-right: 5%;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-areas: "logo logo logo logo link1 link1 link1 link2 link2 link2 link3 link3 link3";
+}
+.logo-container {
+  transform: translate(120px, 35px);
+}
+.link1 {
+  grid-area: link1;
+  line-height: 140px;
+}
+.link2 {
+  grid-area: link2;
+  line-height: 140px;
+}
+.link3 {
+  grid-area: link3;
+  line-height: 140px;
+}
+#nav-icon {
+  font-size: 40px;
+  padding-right: 10px;
+  /* position: relative;
+    top: 8px; */
+  transform: translate(0, 8px);
+  transition: all 0.2s ease-in-out;
+}
+.nav-text {
+  font-size: 22px;
+  transition: all 0.2s ease-in-out;
+}
+.nav-text:hover,
+#nav-icon:hover {
+  color: #ffffff;
+}
+#nav-icon:hover {
+  transform: scale(1.01);
+}
+.firstview {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.textblock {
+  transform: translateY(10%);
+  margin: auto;
+}
+.description {
+  display: block;
+  margin: auto;
+}
+.main-name {
+  text-align: center;
+  font-size: 120px;
+  margin: 0;
+}
+.main-prename {
+  text-align: center;
+  font-size: 120px;
+  margin: 0;
+  /* position: relative;
+    left: 400px; */
+  transform: translate(200px, 0);
+}
+.big-picture {
+  margin: auto;
+  transform: translate(0, 60px);
+}
+.description-title {
+  text-align: center;
+  text-decoration: solid;
+
+  padding-top: 40px;
+}
+.description-content {
+  text-align: center;
+  font-size: 25px;
+  padding-top: 10px;
+}
+.portrait1 {
+  /* border: 3px solid #6f6f6f; */
+  /* padding: 20px; */
+  border: 7px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(165, 174, 255);
+}
+.subtitle1-container {
+  padding-top: 14rem;
+}
+.form-line {
+  display: flex;
+  align-items: center;
+  height: 7px;
+  background-color: #1536f1;
+  position: relative;
+  width: 258px;
+  left: 400px;
+  bottom: 70px;
+}
+.form-line::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #1536f1;
+  position: absolute;
+  right: -5px;
+}
+.subtitle1 {
+  transform: translate(403px, 0);
+}
+.what-i-do {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 20px;
+  border: 7px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(255, 180, 255);
+  margin: 0 250px;
+  position: relative;
+  white-space: normal;
+}
+.text-div {
+  flex-grow: 1;
+  padding-bottom: 50px;
+}
+.programming-pic {
+  margin-left: 20px;
+}
+.projects-button {
+  left: 320px;
+  bottom: 45px;
+  position: absolute;
+  background-color: #e40ecb;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: all 0.5s;
+}
+.projects-button:hover {
+  background-color: white;
+  color: #e40ecb;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.subtitle2-container {
+  padding-top: 5rem;
+}
+.subtitle2 {
+  /* transform: translate(1000px, 0); */
+  text-align: center;
+}
+.form-line2 {
+  display: flex;
+  align-items: center;
+  height: 7px;
+  background-color: #e40ecb;
+  position: relative;
+  width: 258px;
+  left: 775px;
+  bottom: 70px;
+}
+.form-line2::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #e40ecb;
+  position: absolute;
+  right: -5px;
+}
+.this-is-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 7px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(165, 174, 255);
+  margin: 0 710px;
+  position: relative;
+  white-space: normal;
+}
+.portrait3 {
+  padding-bottom: 59px;
+}
+.aboutme-button {
+  bottom: 20px;
+  position: absolute;
+  background-color: #1536f1;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: all 0.5s;
+}
+.aboutme-button:hover {
+  background-color: white;
+  color: #1536f1;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+footer {
+  padding-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 370px;
+}
+.left,
+.right {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-grow: 1;
+}
+.icon-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.fa {
+  color: #6f6f6f;
+  font-size: 55px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: all 0.2s ease-in-out;
+}
+.fa:hover {
+  color: #ffffff;
+  transform: scale(1.2);
+}
+.freepik-link {
+  padding: 8px;
+}
+
+/*Start of Projects page*/
+.projects-title {
+  font-size: 60px;
+  text-align: center;
+  width: 100%;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.project-card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.project-card {
+  width: 560px;
+  height: 294px;
+  margin: 40px;
+  /* position: absolute;
+  left: 283px;
+  top: 454px;
+  width: 560px;
+  height: 294px; */
+  overflow: hidden;
+  display: flex;
+  flex-basis: calc(50% - 40px);
+  transition: all 0.3s;
+  position: relative;
+}
+
+.image-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.text-container {
+  position: absolute;
+  bottom: 0;
+  height: 50%;
+  width: 560px;
+  background-color: rgba(255, 255, 255, 0.42);
+  border-radius: 20px;
+  text-align: center;
+}
+.card-title {
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0);
+  margin: 10px;
+}
+.card-text {
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0);
+}
+.project-card2 {
+  width: 560px;
+  height: 294px;
+  margin: 40px;
+  /* position: absolute;
+  left: 283px;
+  top: 454px;
+  width: 560px;
+  height: 294px; */
+  overflow: hidden;
+  display: flex;
+  flex-basis: calc(50% - 40px);
+  transition: all 0.3s;
+  position: relative;
+}
+.project-card3 {
+  width: 560px;
+  height: 294px;
+  margin: 40px;
+  /* position: absolute;
+  left: 283px;
+  top: 454px;
+  width: 560px;
+  height: 294px; */
+  overflow: hidden;
+  display: flex;
+  flex-basis: calc(50% - 40px);
+  transition: all 0.3s;
+  position: relative;
+}
+.card-title3 {
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0);
+  margin: 4px;
+}
+.card-text3 {
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0);
+  margin: 3px;
+}
+.project-card4 {
+  width: 560px;
+  height: 294px;
+  margin: 40px;
+  /* position: absolute;
+  left: 283px;
+  top: 454px;
+  width: 560px;
+  height: 294px; */
+  overflow: hidden;
+  display: flex;
+  flex-basis: calc(50% - 40px);
+  transition: all 0.3s;
+  position: relative;
+}
+.project-card:hover,
+.project-card2:hover,
+.project-card3:hover,
+.project-card4:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+}
+.footer-projects {
+  position: absolute;
+  /* top: 1905px; */
+  top: 1505px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 370px;
+}
+
+/*Start of About me page*/
+.aboutme-title {
+  text-align: center;
+  width: 100%;
+  padding-top: 85px;
+  font-size: 60px;
+}
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 50px;
+}
+.aboutme-image-container {
+  width: 40%;
+  margin-top: -50px;
+}
+.aboutme-image-container img {
+  width: 100%;
+  border-radius: 50%;
+  margin-left: 150px;
+}
+.aboutme-text-container {
+  width: 60%;
+  margin-top: 70px;
+  margin-left: 300px;
+  margin-right: 80px;
+  text-align: left;
+}
+.aboutme-footer {
+  padding-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 370px;
+}
